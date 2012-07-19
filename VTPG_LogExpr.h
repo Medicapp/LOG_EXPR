@@ -9,6 +9,11 @@
 
 NSString * VTPG_DDToStringFromTypeAndValue(const char * typeCode, void * value);
 
+#ifndef DEBUG
+#define NO_LOG_MACROS 1
+#endif
+
+
 // WARNING: if NO_LOG_MACROS is #define-ed, than THE ARGUMENT WILL NOT BE EVALUATED
 #ifndef NO_LOG_MACROS
 
